@@ -1,0 +1,454 @@
+.bg{
+   background-color: black;
+   background-image: "/assets/img"; 
+}
+/*input*/
+#date_week{
+    font-family:'BEBAS';
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    margin-top: 35px;
+    height: fit-content;
+    width: 144px;
+    color: #ffd200; 
+ 
+}
+#date{
+    font-family:'BEBAS';
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    height: fit-content;
+    width: 144px;
+    color: white;   
+}
+#weather_city{
+    font-family:'song';
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    color: #ffd200;
+    margin-left: 4px;
+}
+#weather_temp{
+    font-family:'BEBAS';
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    color: white;
+    margin-left: 4px;
+}
+#time{
+    background-color: inherit;
+    font-family: "NERVUINum";
+    font-size: 55px;
+    text-align: center;
+    border: none;
+    height: 130px;
+    width: 270px;
+    margin: 2px;
+    color: #ffd200; 
+}
+#ai_name{
+    border: 2px solid white;
+    background-color:transparent;
+    font-family: 'BEBAS';
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: center;
+    color: #ffd200;
+}
+#ai_note{
+    background-color: #a92C25;
+    border: none;
+    width: 99px;
+    height: 230.5px;
+    margin-top: 0.5px;
+    margin-left: 1px;
+    font-family: 'yahei';
+    color: #ffd200;
+    overflow: hidden;
+    resize: none;
+}
+#temp_head{
+    border: none;
+    background: none;
+    width: 120px;
+    margin-left: 2px;
+    font-family: 'BEBAS';
+    color: white;
+}
+#echo_input{
+    border: none;
+    background: none;
+    width: 75px;
+    height: 80px;
+    margin-left: 5px;
+    font-family: 'BEBAS';
+    font-size: 28px;
+    color: #ffd200;
+    z-index: 1;
+    direction: rtl; 
+}
+.sensor{
+    border: none;
+    background: none;
+    width: 75px;
+    height: 80px;
+    margin-left: 5px;
+    font-family: 'BEBAS';
+    font-size: 40px;
+    color: #ffd200;
+    z-index: 1;
+    direction: rtl;
+}
+#unit{
+    float: right;
+    border: none;
+    background: none;
+    width: 48px;
+    height: 80px;
+    margin-left: 2px;
+    font-family: 'BEBAS';
+    font-size: 40px;
+    color: #ffd200;
+}
+#bottom{
+    border: none;
+    background: none;
+    width: 75px;
+    height: 20px;
+    margin-left: 55px;
+    font-family: 'B';
+    font-size: smaller;
+    color: white;
+    direction: rtl;
+}
+.sensor_alarm{
+    border: none;
+    background: none;
+    width: 100px;
+    height: 80px;
+    margin-left: 5px;
+    font-family: 'BEBAS';
+    font-size: 45px;
+    color: #ffd200;
+    z-index: 1;
+    padding-left: 20px;
+}
+#title{
+    float:left;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'B';
+    font-size: larger;
+}
+#date_title{
+    margin-left: 60%;
+    width: 90px;
+    padding-top: 10px;
+    float: left;
+    border: 1px solid red;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'M';
+    font-size: small;
+}
+#update{
+    padding-top: 16px;
+    float: left;
+    width: 220px;
+    border: 1px solid red;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'NERVUINum';
+    font-size: small;
+}
+/*div*/
+.head_div{
+    background-color: black;
+    padding: 1px;
+    border: 1px solid white;
+    height: 30px;
+    margin:10px
+}
+.guidance_div{
+    background-color: #22A6BF;
+    border: none;
+    height: 300px;
+}
+.guidance_div1{
+    /* border: 1px solid red; */
+    height: 300px;
+    width: fit-content;
+    float: left;
+}
+.guidance_div2{
+    float: left;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 140px;
+    margin-left: 2px;
+}
+.guidance_div3{
+    float: left;
+    border: none;
+    height: 100%;
+    width: 140px;
+    margin-left: 2px;
+}
+.weather_div{
+    background-color: #B92C25;
+    margin-left: 4px;
+    margin-top: 4px;
+    height: 49%;
+    width: 280px;
+}
+.weather_info_div{
+    background-color: inherit;
+    height: 70px;
+    width: 150px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 1px;
+}
+.weather_time_div{
+    background-color: inherit;
+    height: 70px;
+    width: 150px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 1px;
+    margin-top: 71px;
+}
+.weather_table_div{
+    background-color: inherit;
+    height: 65px;
+    width: 75px;
+    position: absolute;
+}
+.weather_city_div{
+    background-color: inherit;
+    height: 30px;
+    width: 75px;
+    z-index: 2;
+}
+.weather_temp_div{
+    background-color: inherit;
+    height: 30px;
+    width: 70px;
+    z-index: 2;
+}
+.weather_icon_div{
+    background-color: none;
+    height: 65px;
+    width: 70px;
+    margin-left: 74px;
+    position: absolute;
+    z-index: 1;
+}
+.time_div{
+    position: absolute;
+    background-color: #B92C25;
+    height: 140px;
+    width: 280px;
+    margin-top: 2px;
+    margin-left:4px;
+}
+.AI_div{
+    background-color: #B92C25;
+    position: absolute;
+    height: 290px;
+    width: 140px;
+    margin-top: 3px;
+    z-index: 3;
+}
+.AI_note_div{
+    
+    width: 104px;
+    height: 235px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.ctrl_div{
+    
+    width: 104px;
+    height: 235px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.dht11_div{
+    float: left;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 140px;
+    margin-left: 20px;
+}
+.alarm_div{
+    float: left;
+   
+    height: 100%;
+    width: 140px;
+    margin-left: 20px;
+}
+.temp_div{
+    height: 135px;
+    margin-top: 3px;
+    background-color: #B92C25; 
+}
+.humi_div{
+    height: 135px;
+    margin-top: 20px;
+    background-color: #B92C25; 
+}
+.water_div{
+    height: 135px;
+    margin-top: 3px;
+    background-color: #B92C25;
+}
+.rub_div{
+    height: 135px;
+    margin-top: 20px;
+    background-color: #B92C25;
+}
+.fire_div{
+    float: left;
+    border: none;
+    height: 100%;
+    width: 140px;
+    margin-left: 20px;
+}
+.sensor_up_div{
+    height: 135px;
+    margin-top: 3px;
+    background-color: #B92C25;
+}
+.sensor_bottom_div{
+    height: 135px;
+    margin-top: 20px;
+    background-color: #B92C25;
+}
+.echarts_div{
+    float: left;
+
+    height: 100%;
+    width: 400px;
+    margin-left: 65px;
+}
+/*图片*/
+.NERV_NEW{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+	margin-top:-9px;
+}
+.asuka{
+    margin-top: 10px;
+    height: 18%;
+    width: auto;
+    z-index: 3;
+    position: absolute;
+}
+.CalendarLA{
+    margin: 3px;
+    height:140px;
+    width:275px;
+    position: absolute;
+    z-index: 1;
+}
+.CalendarLB{
+    margin: 3px;
+    height:6px;
+    width:145px;
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 65px;
+    z-index: 1;
+}
+.time_CalendarLA{
+    margin: 3px;
+    position: absolute;
+    z-index: 1;
+    height: 136px;
+    width: 276px;
+}
+.time_img{
+    position: absolute;
+    height: 10%;
+    margin-left: 4px;
+    margin-top: 0px;
+    /* border: 1px solid white; */
+    border: none;
+    background-color: inherit;
+    font-family: BEBAS;
+    color: white;
+    font-size: 1px;
+}
+.ai_LA{
+    pointer-events:none;
+    /*当onclick被上层div/img等挡住，
+    只需给上层div/img添加css属性pointer-events:none;即可*/
+    position: absolute;
+    z-index: 3;
+    width: 138px;
+    height: 284px;
+    margin-top: 3px;
+    margin-left: 1px;
+}
+#weather_icon{
+    background-color: none;
+    height: auto;
+    width: 35px;
+    position: absolute;
+    margin-left:180px;
+    margin-top: 20px;
+    opacity:60%;
+    filter: drop-shadow(-160px 0 0 #ffd200);
+    z-index: 1;
+}
+.NETLA{
+    position: absolute;
+    height: 135px;
+    width: 140px;
+    z-index: 1;
+}
+.NETLB{
+    position: absolute;
+    height: 120px;
+    width: 141px;    
+}
+.Wille{
+
+    height: 95%;
+    margin-left: 153px;   
+}
+/*button*/
+.button{
+    border: 2px solid #ffd200;
+    background-color: #A22C25;
+    width: 100px;
+    height: 25px;
+    margin: 2px;
+    font-family: "yahei";
+    font-size: 15px;
+    text-align: center; 
+    color: #ffd200;
+    margin-left: 5px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/font.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+</head>
+<body class="login_bd">
+<div class="login">
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" id="user" name="username"/><br />
+        <input type="password" id="password" name="password"/><br />
+        <input type="text" id="val" name="val"/><br />
+        <button type="submit" id="btn_lg" name="login">➡登錄</button><br />
+        <button type="button" id="btn_val">➡生成校驗碼</button>
+        <input type="text" id="val_r" name="val_r" readonly="readonly"><br />
+        <button type="button" id="btn_enroll" >➡註冊</button>
+        <input type="text" id="tip" value='{{error_msg}}'>
+        <script type="text/javascript">
+        {{script}}
+        var e = '{{error_msg}}'
+        console.log(e)
+<!--        {{script}}('{{error_msg}}')-->
+        </script>
+    </form> 
+</div>
+<div class="enroll">
+    <form method="POST" >
+        {% csrf_token %}
+        <input type="text" id="Euser" name="Euser"/><br />
+        <input type="password" id="Epassword1" name="Epassword1"/><br />
+        <input type="password" id="Epassword2" name="Epassword2"/><br />
+        <input type="text" id="val_E" name="val_E"><br />
+        <button type="submit" id="btn_enroll_E" name="register">➡註冊</button>
+        <button type="button" id="btn_val_E">➡生成校驗碼</button>
+        <input type="text" id="val_r_E" name="val_r_E" readonly="readonly"><br />
+        <button type="button" id="btn_lg_E">➡登錄</button>
+        <input type="text" id="tip2" value='{{error_msg2}}'>
+    </form>
+</div>
+<div class="img2"></div>
+
+<script src="../static/js/anime.min.js"></script>
+<script src="../static/js/login.js"></script>
+
+</body>
+</html>

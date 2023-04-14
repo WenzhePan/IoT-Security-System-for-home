@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/font.css">
+</head>
+
+<body class="bg">
+    <!-- <img class="NERV_NEW" src="assets/img/NERV NEW.png"> -->
+    <div class="head_div">
+        <input id="title" value="物聯網安防系統">
+        <input id="date_title" value="数据更新时间">
+        <input id="update" value="none">
+    </div>
+    <div class="guidance_div">
+        <div class="guidance_div1">
+            <div class="weather_div">
+                <img class="asuka" src="../static/assets/img/Asuka.png">
+                <img class="CalendarLA" src="../static/assets/img/CalendarLA.png">
+                <img class="CalendarLB" src=../static/assets/img/CalendarLB.png">
+                <div class="weather_info_div">
+                    <div class="weather_table_div">
+                        <div class="weather_city_div">
+                            <input id="weather_city" value="">
+                        </div>
+                        <div class="weather_temp_div">
+                            <input id="weather_temp" value="">
+                        </div>
+                    </div>
+                    <div class="weather_icon_div">
+                        <img id="weather_icon" src="">
+                    </div>
+                </div>
+                <div class="weather_time_div">
+                    <input type="text" id="date" value="123" onfocus="this.blur()">
+                    <input type="text" id="date_week" value="123" onfocus="this.blur()">
+                </div>
+            </div>
+            <div class="time_div">
+                <img src="../static/assets/img/CalendarLA.png" class="time_CalendarLA">
+                <input class="time_img" value="time">
+                <input type="text" id="time" onfocus="this.blur()">
+            </div>
+        </div>
+        <div class="guidance_div2">
+            <div class="AI_div">
+                <img class="ai_LA" src="../static/assets/img/NoteLA.png">
+                <input id="ai_name" value="Asuka">
+                <div class="AI_note_div">
+                    <textarea id="ai_note"></textarea>
+
+                    <!--                    {% for row in all_info%}-->
+                    <!--                        <textarea id="ai_note">{{ row.date }}</textarea>-->
+                    <!--                    {% endfor %}-->
+                </div>
+            </div>
+        </div>
+        <div class="guidance_div3">
+            <div class="AI_div">
+                <img class="ai_LA" src="../static/assets/img/NoteLA.png">
+                <input id="ai_name" value="Control">
+                <div class="ctrl_div">
+                    <form method="GET" action="/Jump_R/">
+                        {% csrf_token %}
+                        <button type="submit" class="button" name="quit">退出系统</button>
+                    </form>
+                    <button class="button" id="button1">管理账号</button>
+                    <button class="button" id="button1">天气预报</button>
+                    <form method="post" action="/ctrl/">
+                        {% csrf_token %}
+                        <button type="submit" class="button" id="button_ctrl" name="ctrl">打开门窗</button>
+                    </form>
+                    <form method="post" action="/close/">
+                        {% csrf_token %}
+                        <button class="button" id="button_close" name="close">关闭门窗</button>
+                    </form>
+                    <button class="button" id="button1">防灾预警</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="dht11_div">
+            <div class="sensor_up_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="TEMP">
+                <input class="sensor" id="temp_input" value="00.0">
+                <input id="unit" value="℃">
+                <input id="bottom" value="溫度">
+            </div>
+            <div class="sensor_bottom_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="HUMI">
+                <input class="sensor" id="humi_input" value="00.0">
+                <input id="unit" value="％">
+                <input id="bottom" value="湿度">
+            </div>
+        </div>
+        <div class="alarm_div">
+            <div class="sensor_up_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="WATER LEVEL">
+                <input class="sensor" id="depth_input" value="00.0">
+                <input id="unit" value="CM">
+                <input id="bottom" value="水位">
+            </div>
+            <div class="sensor_bottom_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="BREAK IN">
+                <input class="sensor" id="echo_input" value="00.0">
+                <input id="unit" value="cm">
+                <input id="bottom" value="窗口探測">
+            </div>
+        </div>
+        <div class="fire_div">
+            <div class="sensor_up_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="SMOKE ALARM">
+                <input class="sensor_alarm" id="smoke_input" value="警報">
+                <input id="bottom" value="煙霧">
+            </div>
+            <div class="sensor_bottom_div">
+                <img class="NETLA" src="../static/assets/img/NETLA.png">
+                <img class="NETLB" src="../static/assets/img/NETLB.png">
+                <input id="temp_head" value="FIRE ALARM">
+                <input class="sensor_alarm" id="fire_input" value="警報">
+                <input id="bottom" value="明火">
+            </div>
+        </div>
+        <div class="echarts_div" id="echarts_id">
+            <img class="Wille" src="../static/assets/img/Wille LOGO.png">
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+    <!-- <script src="../static/js/echarts_door.js"></script> -->
+
+    <script src="../static/js/time.js"></script>
+    <script src="../static/js/anime.min.js"></script>
+    <script src="../static/js/weather.js"></script>
+    <script src="../static/js/alarm.js"></script>
+
+    <!-- 使用百度静态资源库 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 引用搜狐的IP地址库 -->
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+
+    <script type="text/javascript">
+        function re_humi() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_humi",
+                async: false,
+                success: function (result) {
+                    $("#humi_input").val(result[0]);
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        // $(document).ready(function(){
+        //     setInterval("re_humi()",10000);
+        // });
+        function re_temp() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_temp",
+                async: false,
+                success: function (result) {
+                    $("#temp_input").val(result[0]);
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        // $(document).ready(function(){
+        //     setInterval("re_temp()",10000);
+        // });
+        function re_depth() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_depth",
+                async: false,
+                success: function (result) {
+                    $("#depth_input").val(result[0]);
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        // $(document).ready(function(){
+        //     setInterval("re_depth()",10000);
+        // });
+        function re_echo() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_echo",
+                async: false,
+                success: function (result) {
+                    $("#echo_input").val(result[0]);
+
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        // $(document).ready(function(){
+        //     setInterval("re_echo()",10000);
+        // });
+        function re_date() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_date",
+                async: false,
+                success: function (result) {
+                    $("#update").val(result);
+
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        function re_smoke() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_smoke",
+                async: false,
+                success: function (result) {
+                    SmokeInput = result[0];
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        function re_fire() {
+            $.ajax({
+                type: "post",
+                url: "/ajax_fire",
+                async: false,
+                success: function (result) {
+                    FireInput = result[0];
+                },
+                complete: function (XHR, TS) {
+                    XHR = null
+                }
+            });
+        }
+        $(document).ready(function () {
+            re_depth();
+            re_date();
+            re_temp();
+            re_humi();
+            re_echo();
+            re_smoke();
+            re_fire();
+        });
+        setInterval("re_depth()", 60000);
+        setInterval("re_echo()", 60000);
+        setInterval("re_date()", 60000);
+        setInterval("re_temp()", 60000);
+        setInterval("re_humi()", 60000);
+        setInterval("re_fire()",60000);
+        setInterval("re_smoke()",60000);
+    </script>
+</body>

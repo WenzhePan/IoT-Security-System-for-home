@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'B';
+    src: url('../assets/font/FOT-MatissePro/FOT-MatissePro-B.otf');
+}
+@font-face {
+    font-family: 'DB';
+    src: url('../assets/font/FOT-MatissePro/FOT-MatissePro-DB.otf');
+}
+@font-face {
+    font-family: 'EB';
+    src: url('../assets/font/FOT-MatissePro/FOT-MatissePro-EB.otf');
+}
+@font-face {
+    font-family:'L';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-L.otf);
+}
+@font-face {
+    font-family: 'M';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-M.otf);
+}
+@font-face {
+    font-family: 'UB';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-UB.otf);
+}
+@font-face{
+    font-family: 'BEBAS';
+    src:url('../assets/font/BEBAS___.TTF');
+}
+@font-face{
+    font-family: 'kartikab';
+    src:url('../assets/font/kartikab.ttf');
+}
+@font-face {
+    font-family: 'song';
+    src: url('../assets/font/song.TTF');
+}
+@font-face {
+    font-family: "NERVUINum";
+    src: url('../assets/font/NERVUINum.ttf');
+}
+@font-face {
+    font-family: 'yahei';
+    src: url('../assets/font/微软雅黑.ttf');
+}
+
+@font-face {
+    font-family: 'B';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-B.otf);
+}
+@font-face {
+    font-family: 'DB';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-DB.otf);
+}
+@font-face {
+    font-family: 'EB';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-EB.otf);
+}
+@font-face {
+    font-family:'L';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-L.otf);
+}
+@font-face {
+    font-family: 'M';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-M.otf);
+}
+@font-face {
+    font-family: 'UB';
+    src: url(../assets/font/FOT-MatissePro/FOT-MatissePro-UB.otf);
+}
+
+.login{
+    font-family: 'M';
+    font-size: medium;
+    color: red;
+}
+#user{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+
+#password{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#val{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#val_r{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#btn_lg{
+    font-family: 'EB';
+    font-size: 1px;
+    color: black;
+
+    padding-top: 0%;
+    text-align: left;
+}
+#btn_val{
+    font-family: 'EB';
+    font-size: 1px;
+    color: black;
+
+    padding-top: 0%;
+    text-align: left;
+}
+#btn_enroll{
+    font-family: 'EB';
+    font-size: 1px;
+    /* color: black; */
+
+    padding-top: 0%;
+    text-align: left;
+}
+
+.enroll{
+    font-family: 'M';
+    font-size: medium;
+    color: red;
+}
+#Euser{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#tip{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#tip2{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#Epassword1{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#Epassword2{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#val_E{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#val_r_E{
+    font-family: 'UB';
+    font-size: small;
+    color: white;
+}
+#btn_lg_E{
+    font-family: 'EB';
+    font-size: 1px;
+    color: black;
+
+    padding-top: 0%;
+    text-align: left;
+}
+#btn_val_E{
+    font-family: 'EB';
+    font-size: 1px;
+    color: black;
+  
+    padding-top: 0%;
+    text-align: left;
+}
+#btn_enroll_E{
+    font-family: 'EB';
+    font-size: 1px;
+    /* color: black; */
+    
+    padding-top: 0%;
+    text-align: left;
+}
+.name{
+    font-family: 'UB';
+    font-size: medium;
+    text-align: left;
+    color:#FF3B00;
+}
+.picture2{
+    color: white;
+}
+.a1{
+    font-family: 'UB';
+    color:white;
+}

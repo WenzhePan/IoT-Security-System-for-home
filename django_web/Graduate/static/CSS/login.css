@@ -1,0 +1,469 @@
+
+.login_bd{
+    background-color: black;
+}
+.login{
+    position: absolute;
+    border: 2px solid #FF3B00;
+    width: 25%;
+    top:40%;
+    left:25%;
+    height:200px;
+    z-index: 3;
+}
+#user{
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#user::-webkit-input-placeholder{
+    color:black;
+}
+#user::-moz-placeholder{
+    color:black;
+}
+#user:-ms-input-placeholder{
+    color:black;
+}
+#user::-ms-input-placeholder{
+    color:black;
+}
+#user::placeholder{
+    color:black;
+}
+#user:hover::-webkit-input-placeholder{
+    color: white;
+}
+#user:hover::-moz-placeholder{
+    color: white;
+}
+#user:hover:-ms-input-placeholder{
+    color: white;
+}
+#user:hover::-ms-input-placeholder{
+    color: white;
+}
+#user:hover::placeholder{
+    color: white;
+}
+#password{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    top:3.1%;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#password::-webkit-input-placeholder{
+    color:black;
+}
+#password::-moz-placeholder{
+    color:black;
+}
+#password:-ms-input-placeholder{
+    color:black;
+}
+
+#password::placeholder{
+    color:black;
+}
+#password:hover::-webkit-input-placeholder{
+    color: white;
+}
+#password:hover::-moz-placeholder{
+    color: white;
+}
+#password:hover:-ms-input-placeholder{
+    color: white;
+}
+
+#password:hover::placeholder{
+    color: white;
+}
+
+#val{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    top:3.1%;
+    height: 24.3px;
+    border-radius: 0%;
+    margin: 0;
+    overflow: visible;
+}
+#val::-webkit-input-placeholder{
+    color:black;
+}
+#val::-moz-placeholder{
+    color:black;
+}
+#val:-ms-input-placeholder{
+    color:black;
+}
+#val::-ms-input-placeholder{
+    color:black;
+}
+#val::placeholder{
+    color:black;
+}
+#val:hover::-webkit-input-placeholder{
+    color: white;
+}
+#val:hover::-moz-placeholder{
+    color: white;
+}
+#val:hover:-ms-input-placeholder{
+    color: white;
+}
+#val:hover::-ms-input-placeholder{
+    color: white;
+}
+#val:hover::placeholder{
+    color: white;
+}
+#val_r{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 125px;
+    height: 16px;
+    left: 126px;
+    bottom: 3.5px;
+    border-radius: 0%;
+    margin: 0;
+    overflow: visible;
+} 
+.img2{
+    background-image: url(../assets/img/2.jfif);
+    position: absolute;
+    height: 586px;
+    width: 403px;
+    background-size: cover;
+    top:10%;
+    left: 52%;
+    z-index: 4;
+}
+#btn_lg{
+    position: absolute;
+    top:52%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 256px;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    overflow: visible;
+}
+#btn_lg:hover{
+    color: white !important;
+    -webkit-appearance: none; 
+}
+#btn_val{
+    position: absolute;
+    top:66%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 125px;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+#btn_val:hover{
+    color: white !important; 
+}
+#btn_enroll{
+    position: absolute;
+    top:80%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 256px;
+    text-align: left;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+#btn_enroll:hover{
+    color: white !important; 
+}
+.enroll{
+    position: absolute;
+    border: 3px solid #FF3B00;
+    width: 25%;
+    height: 300px;
+    background-size: cover;
+    top:40%;
+    left: 52%;
+    z-index: 3;
+    background-color: black; 
+}
+#Euser{
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#Euser::-webkit-input-placeholder{
+    color:black;
+}
+#Euser::-moz-placeholder{
+    color:black;
+}
+#Euser:-ms-input-placeholder{
+    color:black;
+}
+#Euser::-ms-input-placeholder{
+    color:black;
+}
+#Euser::placeholder{
+    color:black;
+}
+#Euser:hover::-webkit-input-placeholder{
+    color: white;
+}
+#Euser:hover::-moz-placeholder{
+    color: white;
+}
+#Euser:hover:-ms-input-placeholder{
+    color: white;
+}
+#Euser:hover::-ms-input-placeholder{
+    color: white;
+}
+#Euser:hover::placeholder{
+    color: white;
+}
+#Epassword1{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    top:0.2%;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#Epassword1::-webkit-input-placeholder{
+    color:black;
+}
+#Epassword1::-moz-placeholder{
+    color:black;
+}
+#Epassword1:-ms-input-placeholder{
+    color:black;
+}
+#Epassword1::-ms-input-placeholder{
+    color:black;
+}
+#Epassword1::placeholder{
+    color:black;
+}
+#Epassword1:hover::-webkit-input-placeholder{
+    color: white;
+}
+#Epassword1:hover::-moz-placeholder{
+    color: white;
+}
+#Epassword1:hover:-ms-input-placeholder{
+    color: white;
+}
+#Epassword1:hover::-ms-input-placeholder{
+    color: white;
+}
+#Epassword1:hover::placeholder{
+    color: white;
+}
+#Epassword2{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    top:0.2%;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#Epassword2::-webkit-input-placeholder{
+    color:black;
+}
+#Epassword2::-moz-placeholder{
+    color:black;
+}
+#Epassword2:-ms-input-placeholder{
+    color:black;
+}
+#Epassword2::-ms-input-placeholder{
+    color:black;
+}
+#Epassword2::placeholder{
+    color:black;
+}
+#Epassword2:hover::-webkit-input-placeholder{
+    color: white;
+}
+#Epassword2:hover::-moz-placeholder{
+    color: white;
+}
+#Epassword2:hover:-ms-input-placeholder{
+    color: white;
+}
+#Epassword2:hover::-ms-input-placeholder{
+    color: white;
+}
+#Epassword2:hover::placeholder{
+    color: white;
+}
+#val_E{
+    position: relative;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 250px;
+    top:0.2%;
+    height: 24.3px;
+    border-radius: 0%;
+}
+#val_E::-webkit-input-placeholder{
+    color:black;
+}
+#val_E::-moz-placeholder{
+    color:black;
+}
+#val_E:-ms-input-placeholder{
+    color:black;
+}
+#val_E::-ms-input-placeholder{
+    color:black;
+}
+#val_E::placeholder{
+    color:black;
+}
+#val_E:hover::-webkit-input-placeholder{
+    color: white;
+}
+#val_E:hover::-moz-placeholder{
+    color: white;
+}
+#val_E:hover:-ms-input-placeholder{
+    color: white;
+}
+#val_E:hover::-ms-input-placeholder{
+    color: white;
+}
+#val_E:hover::placeholder{
+    color: white;
+}
+#btn_enroll_E{
+    position: absolute;
+    top:44%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 256px;
+    text-align: left;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+#btn_enroll_E:hover{
+    color: white !important; 
+}
+#btn_val_E{
+    position: absolute;
+    top:52%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 125px;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+#btn_val_E:hover{
+    color: white !important; 
+}
+#val_r_E{
+    position: absolute;
+    background-color: #FF3B00;
+    border: 1px solid #FF3B00;
+    outline: none;
+    width: 125px;
+    height: 16px;
+    left: 126px;
+    bottom: 3.5px;
+    top: 52%;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#btn_lg_E{
+    position: absolute;
+    top:60%;
+    background-color: #FF3B00;
+    border: none;
+    height: 20px;
+    width: 256px;
+    letter-spacing:2px;
+    border-radius: 0%;
+    -webkit-appearance: none;
+    padding: 3;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+#btn_lg_E:hover{
+    color: white !important; 
+}
+
+#tip{
+    margin-top: 28px;
+    height: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+#tip2{
+    margin-top: 50px;
+    height: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
